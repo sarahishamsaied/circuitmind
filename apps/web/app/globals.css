@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 94%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 6%;
+    --muted: 217 33% 16%;
+    --muted-foreground: 215 20% 55%;
+    --border: 217 33% 20%;
+    --card: 222 47% 9%;
+    --card-foreground: 210 40% 94%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Konva canvas parent needs explicit sizing */
+.schematic-canvas-container {
+  @apply relative w-full h-full overflow-hidden bg-[#0d1117];
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 3px;
+}

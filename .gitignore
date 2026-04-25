@@ -1,0 +1,57 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+.next/
+*.tsbuildinfo
+dist/
+build/
+out/
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Environment & secrets (never commit real env; *.example stays tracked)
+.env
+.env.*
+!.env.example
+!**/.env.example
+.env.local
+.env.*.local
+
+# Turbo
+.turbo/
+
+# Testing
+coverage/
+.pytest_cache/
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Docker volumes (local)
+postgres_data/
+redis_data/
+
+# Temp files
+/tmp/simulations/
+*.kicad_pro
+*.kicad_sch
+*.kicad_pcb

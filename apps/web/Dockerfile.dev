@@ -1,0 +1,19 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Copy workspace root
+COPY package.json turbo.json ./
+COPY packages/ packages/
+
+# Copy web app
+COPY apps/web/package.json apps/web/
+
+RUN npm install
+
+COPY apps/web/ apps/web/
+
+WORKDIR /app/apps/web
+
+EXPOSE 3000
+CMD ["npm", "run", "dev"]

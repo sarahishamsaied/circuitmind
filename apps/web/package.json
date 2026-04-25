@@ -1,0 +1,39 @@
+{
+  "name": "@circuitmind/web",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@circuitmind/circuit-ir": "*",
+    "@react-three/drei": "^9.105.0",
+    "@react-three/fiber": "^8.16.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "immer": "^10.1.1",
+    "konva": "^9.3.6",
+    "lucide-react": "^0.378.0",
+    "next": "14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-konva": "^18.2.10",
+    "react-resizable-panels": "^2.0.19",
+    "three": "^0.164.1",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.0",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
+    "@types/three": "^0.164.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.0"
+  }
+}
